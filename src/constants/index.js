@@ -3,18 +3,19 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
+  javascript,
+  typescript,
+  vue,
+  pinia,
+  uni,
+  react,
+  nextjs,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   hengriyunshang,
   tianronghulian,
   heshengchuangzhan,
@@ -22,7 +23,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from '../assets'
 
 const navLinks = [
@@ -77,12 +77,24 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'Vue JS',
+    icon: vue,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'Pinia',
+    icon: pinia,
+  },
+  {
+    name: 'Uni App',
+    icon: uni,
+  },
+  {
+    name: 'React JS',
+    icon: react,
+  },
+  {
+    name: 'Next JS',
+    icon: nextjs,
   },
   {
     name: 'Tailwind CSS',
@@ -97,20 +109,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
     name: 'git',
     icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ]
 
@@ -156,7 +156,7 @@ const experiences = [
     title: 'Front-End Developer',
     company_name: 'DCloud',
     icon: DCloud,
-    iconBg: '#fff',
+    iconBg: '#f3f3f3',
     date: 'June 2022 - Present',
     points: [
       'Deeply involved in the development and iteration of uni-app and Uni-app-X, involving compilers, runtime, automated testing, etc.',
