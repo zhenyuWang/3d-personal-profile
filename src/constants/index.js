@@ -16,13 +16,13 @@ import {
   nodejs,
   mongodb,
   git,
-  hengriyunshang,
-  tianronghulian,
-  heshengchuangzhan,
+  HengRiYunShang,
+  TianRongHuLian,
+  HeShengChuangZhan,
   DCloud,
-  carrent,
-  jobit,
-  tripguide,
+  uniapp,
+  bigScreenEcharts,
+  backgroundManagementSystem,
 } from '../assets'
 
 const navLinks = [
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: 'Front-End Developer',
     company_name: 'heng ri yun shang',
-    icon: hengriyunshang,
+    icon: HengRiYunShang,
     iconBg: '#fff',
     date: 'August 2016 - September 2017',
     points: [
@@ -130,7 +130,7 @@ const experiences = [
   {
     title: 'Front-End Developer',
     company_name: 'tian rong hu lian',
-    icon: tianronghulian,
+    icon: TianRongHuLian,
     iconBg: '#383E56',
     date: 'November 2017 - June 2019',
     points: [
@@ -142,7 +142,7 @@ const experiences = [
   {
     title: 'Front-End Developer',
     company_name: 'he sheng chuang zhan',
-    icon: heshengchuangzhan,
+    icon: HeShengChuangZhan,
     iconBg: '#fff',
     date: 'June 2019 - May 2022',
     points: [
@@ -194,67 +194,84 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Uni App',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A cross-platform framework using Vuejs. A set of code that can be published to iOS, Android, Web and various small programs.',
     tags: [
       {
-        name: 'react',
+        name: 'vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'cross-platform',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'jest',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: uniapp,
+    source_code_link: 'https://github.com/dcloudio/uni-app',
   },
   {
-    name: 'Job IT',
+    name: 'Big Screen Echarts',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'A large screen visual development framework based on Vuejs and Echarts.Unit tests are also integrated.',
     tags: [
       {
-        name: 'react',
+        name: 'vite',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'vue',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'echarts',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'jest',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: bigScreenEcharts,
+    source_code_link:
+      'https://github.com/zhenyuWang/large-screen-visualization-echarts',
   },
   {
-    name: 'Trip Guide',
+    name: 'Management System',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A background management system development template based on Vuejs.Both unit and e2e tests are integrated.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'vue',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'pinia',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'ElementPlus',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'jest',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'cypress',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: backgroundManagementSystem,
+    source_code_link: 'https://github.com/zhenyuWang/vue3-element-admin2',
   },
 ]
 

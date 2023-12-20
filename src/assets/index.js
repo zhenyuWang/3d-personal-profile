@@ -23,14 +23,14 @@ import tailwind from './tech/tailwind.png'
 import nodejs from './tech/nodejs.png'
 import mongodb from './tech/mongodb.png'
 
-import hengriyunshang from './company/hengriyunshang.jpeg'
-import tianronghulian from './company/tianronghulian.png'
-import heshengchuangzhan from './company/heshengchuangzhan.jpeg'
+import HengRiYunShang from './company/hengriyunshang.jpeg'
+import TianRongHuLian from './company/tianronghulian.png'
+import HeShengChuangZhan from './company/heshengchuangzhan.jpeg'
 import DCloud from './company/DCloud.png'
 
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
+import uniapp from './uni-app.png'
+import bigScreenEcharts from './big-screen-echarts.jpg'
+import backgroundManagementSystem from './background-management-system.png'
 
 export {
   logo,
@@ -56,11 +56,11 @@ export {
   tailwind,
   nodejs,
   mongodb,
-  hengriyunshang,
-  tianronghulian,
-  heshengchuangzhan,
+  HengRiYunShang,
+  TianRongHuLian,
+  HeShengChuangZhan,
   DCloud,
-  carrent,
-  jobit,
-  tripguide,
+  uniapp,
+  bigScreenEcharts,
+  backgroundManagementSystem,
 }
