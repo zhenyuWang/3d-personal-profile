@@ -6,7 +6,7 @@ import {
   Experience,
   Tech,
   Works,
-  Feedbacks,
+  // Feedbacks,
   Contact,
   StarsCanvas,
 } from './components'
@@ -23,7 +23,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
