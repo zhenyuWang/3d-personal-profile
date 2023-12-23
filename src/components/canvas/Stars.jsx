@@ -14,8 +14,6 @@ const Stars = (props) => {
     }
   }
 
-  console.log('sphere', sphere)
-
   useFrame((_, delta) => {
     ref.current.rotation.x -= delta / 10
     ref.current.rotation.y -= delta / 15
