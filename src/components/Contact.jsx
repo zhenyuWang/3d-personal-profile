@@ -6,6 +6,8 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import Confetti from 'react-dom-confetti'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
   const formRef = useRef()
@@ -17,6 +19,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false)
 
+  const [sendSuccess, setSendSuccess] = useState(false)
   const handleChange = (e) => {
     const { target } = e
     const { name, value } = target
@@ -28,6 +31,8 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
+    if (loading) return
+
     e.preventDefault()
     setLoading(true)
 
@@ -37,7 +42,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: import.meta.env.VITE_APP_EMAILJS_TO_NAME,
+          to_name: import.meta.env.VITE_APP_MY_NAME,
           from_email: form.email,
           to_email: import.meta.env.VITE_APP_EMAILJS_TO_EMAIL,
           message: form.message,
@@ -47,7 +52,18 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false)
-          alert('Thank you. I will get back to you as soon as possible.')
+          setSendSuccess(true)
+          setTimeout(() => {
+            setSendSuccess(false)
+          }, 800)
+
+          toast.success(
+            'Thank you. I will get back to you as soon as possible.',
+            {
+              position: 'top-center',
+              autoClose: 3000,
+            }
+          )
 
           setForm({
             name: '',
@@ -58,8 +74,10 @@ const Contact = () => {
         (error) => {
           setLoading(false)
           console.error(error)
-
-          alert('Ahh, something went wrong. Please try again.')
+          toast.error('Oh, something went wrong. Please try again.', {
+            position: 'top-center',
+            autoClose: 3000,
+          })
         }
       )
   }
@@ -115,6 +133,15 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
             {loading ? 'Sending...' : 'Send'}
+            <Confetti
+              active={sendSuccess}
+              config={{
+                angle: 90,
+                spread: 360,
+                startVelocity: 45,
+                elementCount: 300,
+              }}
+            />
           </button>
         </form>
       </motion.div>

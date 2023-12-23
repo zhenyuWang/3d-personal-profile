@@ -23,7 +23,7 @@ const Navbar = () => {
           }}>
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='flex text-white text-[16px] font-bold cursor-pointer'>
-            ZhenyuWang &nbsp;
+            {import.meta.env.VITE_APP_MY_NAME} &nbsp;
             <span className='sm:block hidden'>| JS Mastery</span>
           </p>
         </Link>
