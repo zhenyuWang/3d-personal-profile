@@ -13,6 +13,15 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
+  window.onload = function () {
+    const hash = window.location.hash
+    if (hash) {
+      const element = document.querySelector(hash)
+      if (element) {
+        element.scrollIntoView()
+      }
+    }
+  }
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
