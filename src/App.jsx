@@ -16,10 +16,15 @@ const App = () => {
   window.onload = function () {
     const hash = window.location.hash
     if (hash) {
-      const element = document.querySelector(hash)
-      if (element) {
-        element.scrollIntoView()
-      }
+      const startTime = Date.now()
+      const timer = setInterval(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView()
+          clearInterval(timer)
+        }
+        if (Date.now() - startTime > 3000) clearInterval(timer)
+      }, 100)
     }
   }
   return (
