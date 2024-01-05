@@ -7,6 +7,22 @@ import CanvasLoader from '../Loader'
 const Computers = ({ isMobile }) => {
   const { scene } = useGLTF('/desktop_pc/scene.gltf')
 
+  // wait model loading completed, jump anchor point
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      const startTime = Date.now()
+      const timer = setInterval(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView()
+          clearInterval(timer)
+        }
+        if (Date.now() - startTime > 3000) clearInterval(timer)
+      }, 100)
+    }
+  }, [])
+
   return (
     <mesh>
       <hemisphereLight intensity={3} groundColor='black' />
