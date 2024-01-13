@@ -28,6 +28,8 @@ import TianRongHuLian from './company/tianronghulian.png'
 import HeShengChuangZhan from './company/heshengchuangzhan.jpeg'
 import DCloud from './company/DCloud.png'
 
+import nextjsDevelopmentFramework from './nextjs-development-framework.png'
+import nextjsAdmin from './nextjs-admin.png'
 import uniapp from './uni-app.png'
 import bigScreenEcharts from './big-screen-echarts.jpg'
 import backgroundManagementSystem from './background-management-system.png'
@@ -60,6 +62,8 @@ export {
   TianRongHuLian,
   HeShengChuangZhan,
   DCloud,
+  nextjsDevelopmentFramework,
+  nextjsAdmin,
   uniapp,
   bigScreenEcharts,
   backgroundManagementSystem,

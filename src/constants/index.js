@@ -20,6 +20,8 @@ import {
   TianRongHuLian,
   HeShengChuangZhan,
   DCloud,
+  nextjsDevelopmentFramework,
+  nextjsAdmin,
   uniapp,
   bigScreenEcharts,
   backgroundManagementSystem,
@@ -193,6 +195,56 @@ const testimonials = [
 ]
 
 const projects = [
+{
+    name: 'Nextjs Development Template',
+    description:
+      'A Nextjs development template with unit tests and e2e tests integrated.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'jest',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nextjsDevelopmentFramework,
+    source_code_link: 'https://github.com/zhenyuWang/nextjs-development-framework',
+  },
+  {
+    name: 'Nextjs Admin',
+    description:
+      'A background management system template based on Next.js@14 NextUI and NextAuth.js.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextUI',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'nextAuth',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nextjsAdmin,
+    source_code_link: 'https://github.com/zhenyuWang/nextjs-admin',
+  },
   {
     name: 'Uni App',
     description:
