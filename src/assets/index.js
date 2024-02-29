@@ -30,6 +30,7 @@ import DCloud from './company/DCloud.png'
 
 import nextjsDevelopmentFramework from './nextjs-development-framework.png'
 import nextjsAdmin from './nextjs-admin.png'
+import nextjsTodoList from './nextjs-todo-list.png'
 import uniapp from './uni-app.png'
 import bigScreenEcharts from './big-screen-echarts.jpg'
 import backgroundManagementSystem from './background-management-system.png'
@@ -64,6 +65,7 @@ export {
   DCloud,
   nextjsDevelopmentFramework,
   nextjsAdmin,
+  nextjsTodoList,
   uniapp,
   bigScreenEcharts,
   backgroundManagementSystem,

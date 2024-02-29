@@ -22,6 +22,7 @@ import {
   DCloud,
   nextjsDevelopmentFramework,
   nextjsAdmin,
+  nextjsTodoList,
   uniapp,
   bigScreenEcharts,
   backgroundManagementSystem,
@@ -244,6 +245,31 @@ const projects = [
     ],
     image: nextjsAdmin,
     source_code_link: 'https://github.com/zhenyuWang/nextjs-admin',
+  },
+  {
+    name: 'Nextjs Todo List',
+    description:
+      'A todo list application based on Next.js@14 NextUI and NextAuth.js.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextUI',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'nextAuth',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nextjsTodoList,
+    source_code_link: 'https://github.com/zhenyuWang/nextjs-todo-list',
   },
   {
     name: 'Uni App',
